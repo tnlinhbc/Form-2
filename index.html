@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="dk">
+        <h1>ĐĂNG KÝ KHOÁ HỌC ONLINE</h1>
+        <form name="dangky">
+            <table border="0" align="center">
+                <tr>
+                    <td>
+                        <label for="hoten">Học tên</label>
+                    </td>
+                    <td colspan="2"><input type="text" required name="hoten" placeholder="Nhập họ tên đầy đủ"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Địa chỉ email</label></td>
+                    <td colspan="2"><input type="email" name="email" placeholder="Vui lòng nhập địa chỉ Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="sdt">Số điện thoại</label></td>
+                    <td colspan="2"><input type="tel" name="sdt" required placeholder="Vui lòng nhập đầy đủ Sđt"></td>
+                </tr>
+                <tr>
+                    <td><label for="chonthongtin">Chọn thông tin</label></td>
+                    <td><select name="chonthongtin">
+                            <option value="chonnuoc" selected>Chọn nước</option>
+                            <option value="Việt Nam">Việt Nam</option>
+                            <option value="Mỹ">Mỹ</option>
+                            <option value="Anh">Anh</option>
+                        </select>
+                    </td>
+                    <td> <select name="chonkhoahoc">
+                            <option value="chonkhoahoc" selected>Chọn khoá học</option>
+                            <option value="Cơ bản">Cơ bản</option>
+                            <option value="Nâng cao">Nâng cao</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="noidung">Nội dung</label></td>
+                    <td colspan="2"><textarea name="noidung" cols="30em" rows="10em"
+                            placeholder="Nhập nội dung liên hệ"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input name="gui" type="button" value="Gửi" id="gui" onclick="return Kiemtra();">
+                    </td>
+                    <td colspan="2"><label for="gui" id="tg">Vui lòng điền đầy đủ thông tin</label></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" name="reset" value="Đặt lại" id="reset" onclick="return Datlai()"></td>
+                    <td colspan="2"><label for="reset">Chọn vào đây để nhập lại thông tin</label></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div id="hienthongtin"></div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

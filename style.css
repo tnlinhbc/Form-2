@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dk input {
+    width: 100%;
+}
+
+#gui {
+    height: 3em;
+}
+
+#tg {
+    margin-left: 1em;
+}
+
+.dk textarea {
+    width: 100%;
+}
+
+.dk label {
+    font-weight: bold;
+}
+
+.dk h1 {
+    text-align: center;
+    color: red;
+}
+
+#hienthongtin h3 {
+    text-align: center;
+    color: red;
+}
+
+#reset {
+    height: 3em;
+}
